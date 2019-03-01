@@ -1,0 +1,275 @@
+@font-face {
+    font-family: "Burbank";
+    src: url("./ressources/Burbank.otf");
+}
+html {
+}
+body {
+    background-image :  url("./ressources/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Burbank";
+    margin : 0px;
+}
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color :#000000;;
+        background-size: cover;
+        box-shadow : 0vw 0vw 5vw #000000;
+        transition-duration: 1s;
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size : 3vw;
+        float: right;
+        padding-top: 1vw;
+        padding-left: 0vw;
+        transition-duration: 1s;
+      }
+      li h1 {
+        display: block;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size : 3vw;
+        float: right;
+        padding-top: 1vw;
+        padding-left: 0vw;
+        transition-duration: 1s;
+      }
+      li img{
+            float: left;     
+        height : 5vw;
+        transition-duration: 1s;
+      }
+
+      li[id="menu"] {
+        float: right;
+      }
+      li[id="menu"] a {
+        display: block;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size : 3vw;
+        float: middle;
+        padding-top: 1vw;
+        padding-right: 1.25vw;
+        transition-duration: 1s;
+      }
+      li[id="menu"]:hover {
+          text-shadow : 0vw 0vw 2vw #ffe100;
+          color : yellow;
+      }
+
+.kevin {
+    display: block;
+    float: middle;
+    color: rgb(40, 40, 40);
+    text-align: center;
+    text-decoration: none;
+    font-size : 2.25vw;
+    background-color : rgb(40, 40, 40);
+    background-size: cover;
+    height: 60vw;
+
+}
+
+  .kevin h1{
+    animation-name: kevin;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    float : middle;
+    color: #fff;
+    padding-top : 2.5vw;
+    
+  }
+
+/*FOOTER*/
+
+.footerm {
+  background-color : rgba(0,0,0,0.8);
+  float: middle;
+  font-size : 2vw;
+  margin-top : 2.5vw;
+  margin-bottom : 0;
+  padding: 0;
+  overflow: hidden;
+}
+.footerm p {
+ float: middle;
+ color: white;
+ text-align:center;
+}
+
+/*ITEM SHOP*/
+.shop {
+	text-align: left;
+	float: middle;
+}
+.item img {  
+	transition-duration : 0.5s;
+}
+
+.item:hover img {
+	
+filter: brightness(120%);
+}
+
+.column {
+  box-sizing: border-box;
+  float: left;
+  width: 50%; /* Should be removed. Only for demonstration */
+  border-left-style: solid;
+border-color : #fff;
+  }
+.column-left {
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+border-right-style: solid;  /* Should be removed. Only for demonstration */
+border-color : #fff;
+}
+.column-left .item {
+  float: right;
+}
+.column .item {
+  float: left;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column-left h1{
+	display: block;
+	text-align: center;
+	padding-top : 0px
+}
+.column h1{
+	display: block;
+	text-align: center;
+	padding-top : 0px;
+}
+.column b {
+font-size: 1px;
+}
+
+.column {
+font-size: 0px;
+}
+.column h1{
+	font-size:4.5vw;
+}
+.upitem img {
+	margin : 1vw;
+	height: 150px;
+	transition-duration : 0.5s;
+	font-size: 1px;
+}
+
+.upitem img:hover {
+	
+filter: brightness(1800%);
+}
+
+.item[id="legendary"]  {
+background: rgb(244,228,0);
+background: -moz-radial-gradient(center, ellipse cover, rgba(244,228,0,1) 0%, rgba(226,173,0,1) 100%);
+background: -webkit-radial-gradient(center, ellipse cover, rgba(244,228,0,1) 0%,rgba(226,173,0,1) 100%); 
+background: radial-gradient(ellipse at center, rgba(244,228,0,1) 0%,rgba(226,173,0,1) 100%);
+border: 5px solid rgba(244,228,0,1);
+font-size: 1px;
+}
+
+.item[id="epic"] {
+background: rgb(179,0,244);
+background: -moz-radial-gradient(center, ellipse cover, rgba(179,0,244,1) 0%, rgba(109,0,193,1) 100%);
+background: -webkit-radial-gradient(center, ellipse cover, rgba(179,0,244,1) 0%,rgba(109,0,193,1) 100%);
+background: radial-gradient(ellipse at center, rgba(179,0,244,1) 0%,rgba(109,0,193,1) 100%);
+border: 5px solid rgba(179,0,244,1);
+font-size: 1px;
+}
+
+.item[id="rare"] {
+background: rgb(0,201,237);
+background: -moz-radial-gradient(center, ellipse cover, rgba(0,201,237,1) 0%, rgba(0,91,219,1) 100%); 
+background: -webkit-radial-gradient(center, ellipse cover, rgba(0,201,237,1) 0%,rgba(0,91,219,1) 100%);
+background: radial-gradient(ellipse at center, rgba(0,201,237,1) 0%,rgba(0,91,219,1) 100%);
+border: 5px solid rgba(0,201,237,1);
+font-size: 1px;
+
+}
+
+.item[id="uncommon"] {
+background: -moz-radial-gradient(center, ellipse cover, rgba(67,158,83,1) 0%, rgba(0,110,46,1) 100%);
+background: -webkit-radial-gradient(center, ellipse cover, rgba(67,158,83,1) 0%,rgba(0,110,46,1) 100%);
+background: radial-gradient(ellipse at center, rgba(67,158,83,1) 0%,rgba(0,110,46,1) 100%);
+border: 5px solid rgba(67,158,83,1);
+font-size: 1px;
+
+}
+
+.item {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin : 1vw;
+  line-height: 0px;
+  font-size: 1px;
+}
+.item img {
+
+  display: block;
+  width: 150px;
+  height: 150px;
+
+}
+
+.itemname {
+  background-color: rgba(0,0,0,0.5);
+  opacity: 0.5;
+  left: 0;
+  right: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;  padding: px;
+  text-align: center;
+  
+	transition-duration : 0.5s;
+  line-height: 0px;
+}
+.itemname h4 {
+  color: white;
+  color: #fff;
+  font-size: 25px;
+  line-height: 0px; 
+  margin-bottom: 5px;
+}
+
+.item:hover .itemname {
+  opacity: 1;
+  transition-duration : 0.5s;
+  line-height: 0px;
+}
+
+.itemname h4[id="cost"] {
+  font-size: 18px;
+  display: inline-block;
+}
